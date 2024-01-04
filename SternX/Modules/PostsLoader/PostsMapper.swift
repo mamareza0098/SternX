@@ -3,6 +3,8 @@
 
 import Foundation
 
+// Maps the response data to an array of `PostBased on the provided code, here's an explanation of the comments/documentation:
+
 internal final class PostsMapper {
     
     private struct PostItem: Decodable {

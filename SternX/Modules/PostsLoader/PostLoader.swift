@@ -8,22 +8,28 @@ public final class PostLoader {
     private let client: HTTPClient
     private let url : URL
     
+    // Represents the result of loading posts.
+    // - success: Loading posts was successful, providing an array of `Post` objects.
+    // - failure: Loading posts failed, providing a `PostLoaderError`.
     public enum Result : Equatable{
         case success([Post])
         case failure(PostLoaderError)
     }
     
-    
+    // Represents the possible errors that can occur during post loading.
     public enum PostLoaderError : Swift.Error {
+
         case connectivity
         case invalidData
     }
     
+    // Initializes a new instance of the `PostLoader` class.
     public init(url: URL , client: HTTPClient){
         self.url = url
         self.client = client
     }
     
+    // Loads posts asynchronously and calls the completion handler with the result.
     public func load(completion: @escaping (Result) -> Void) {
         
         Task.synchronous {
@@ -43,6 +49,7 @@ public final class PostLoader {
         }
     }
     
+    // Maps the response data to a `Result` type.
     private func map(_ data: Data, from response: HTTPURLResponse) -> Result {
         do {
             let posts = try PostsMapper.map(data, response)
@@ -50,21 +57,5 @@ public final class PostLoader {
         }catch {
             return .failure(.invalidData)
         }
-    }
-}
-
-extension Task where Failure == Error {
-    /// Performs an async task in a sync context.
-    ///
-    /// - Note: This function blocks the thread until the given operation is finished. The caller is responsible for managing multithreading.
-    static func synchronous(priority: TaskPriority? = nil, operation: @escaping @Sendable () async throws -> Success) {
-        let semaphore = DispatchSemaphore(value: 0)
-
-        Task(priority: priority) {
-            defer { semaphore.signal() }
-            return try await operation()
-        }
-
-        semaphore.wait()
     }
 }

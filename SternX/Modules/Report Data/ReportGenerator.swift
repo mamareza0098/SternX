@@ -3,6 +3,7 @@
 
 import Foundation
 
+// Class responsible for reporting data related to posts and users.
 class ReportGenerator {
     
     func generateReport(_ data: [Int: Int]) {
