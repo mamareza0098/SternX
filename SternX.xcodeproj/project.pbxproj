@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E3190612B4320A90043FF90 /* CLI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3190602B4320A90043FF90 /* CLI.swift */; };
+		7E31906A2B4321410043FF90 /* DataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3190692B4321410043FF90 /* DataProcessor.swift */; };
+		7E31906C2B43214E0043FF90 /* ReportGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31906B2B43214E0043FF90 /* ReportGenerator.swift */; };
+		7E31906E2B43216F0043FF90 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31906D2B43216F0043FF90 /* Post.swift */; };
+		7E31907C2B4337A10043FF90 /* SternX_Loader_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31907B2B4337A10043FF90 /* SternX_Loader_Tests.swift */; };
+		7E3190822B4339C80043FF90 /* DataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3190692B4321410043FF90 /* DataProcessor.swift */; };
+		7E3190832B4339C80043FF90 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31906D2B43216F0043FF90 /* Post.swift */; };
+		7E3190842B4339C80043FF90 /* CLI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3190602B4320A90043FF90 /* CLI.swift */; };
+		7E3190852B4339C90043FF90 /* ReportGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31906B2B43214E0043FF90 /* ReportGenerator.swift */; };
+		7E3190872B4341DC0043FF90 /* PostLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3190862B4341DC0043FF90 /* PostLoader.swift */; };
+		7E3190882B4341E10043FF90 /* PostLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3190862B4341DC0043FF90 /* PostLoader.swift */; };
+		7E31908A2B44B3B50043FF90 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3190892B44B3B50043FF90 /* HTTPClient.swift */; };
+		7E31908C2B44B3D40043FF90 /* PostsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31908B2B44B3D40043FF90 /* PostsMapper.swift */; };
+		7E31908D2B44B4320043FF90 /* PostsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31908B2B44B3D40043FF90 /* PostsMapper.swift */; };
+		7E31908E2B44B4320043FF90 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3190892B44B3B50043FF90 /* HTTPClient.swift */; };
+		7E3190932B45FC630043FF90 /* SternX_Processor_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3190912B45FC630043FF90 /* SternX_Processor_Tests.swift */; };
+		7E3190A12B46E2950043FF90 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 7E3190A02B46E2950043FF90 /* ArgumentParser */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7E31905B2B4320A90043FF90 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7E31905D2B4320A90043FF90 /* SternX */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SternX; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E3190602B4320A90043FF90 /* CLI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLI.swift; sourceTree = "<group>"; };
+		7E3190692B4321410043FF90 /* DataProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProcessor.swift; sourceTree = "<group>"; };
+		7E31906B2B43214E0043FF90 /* ReportGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportGenerator.swift; sourceTree = "<group>"; };
+		7E31906D2B43216F0043FF90 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		7E3190792B4337A10043FF90 /* SternX-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SternX-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E31907B2B4337A10043FF90 /* SternX_Loader_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SternX_Loader_Tests.swift; sourceTree = "<group>"; };
+		7E3190862B4341DC0043FF90 /* PostLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLoader.swift; sourceTree = "<group>"; };
+		7E3190892B44B3B50043FF90 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		7E31908B2B44B3D40043FF90 /* PostsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsMapper.swift; sourceTree = "<group>"; };
+		7E3190912B45FC630043FF90 /* SternX_Processor_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SternX_Processor_Tests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E31905A2B4320A90043FF90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3190A12B46E2950043FF90 /* ArgumentParser in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E3190762B4337A10043FF90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E3190542B4320A90043FF90 = {
+			isa = PBXGroup;
+			children = (
+				7E31905F2B4320A90043FF90 /* SternX */,
+				7E31907A2B4337A10043FF90 /* SternX-Tests */,
+				7E31905E2B4320A90043FF90 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E31905E2B4320A90043FF90 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E31905D2B4320A90043FF90 /* SternX */,
+				7E3190792B4337A10043FF90 /* SternX-Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E31905F2B4320A90043FF90 /* SternX */ = {
+			isa = PBXGroup;
+			children = (
+				7E3190602B4320A90043FF90 /* CLI.swift */,
+				7E31906F2B4335B10043FF90 /* Models */,
+				7E3190702B4335C00043FF90 /* Modules */,
+			);
+			path = SternX;
+			sourceTree = "<group>";
+		};
+		7E31906F2B4335B10043FF90 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7E31906D2B43216F0043FF90 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7E3190702B4335C00043FF90 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7E3190732B4336970043FF90 /* PostsLoader */,
+				7E31908F2B45E1790043FF90 /* Data Processing */,
+				7E3190902B45E1850043FF90 /* Report Data */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		7E3190732B4336970043FF90 /* PostsLoader */ = {
+			isa = PBXGroup;
+			children = (
+				7E3190862B4341DC0043FF90 /* PostLoader.swift */,
+				7E3190892B44B3B50043FF90 /* HTTPClient.swift */,
+				7E31908B2B44B3D40043FF90 /* PostsMapper.swift */,
+			);
+			path = PostsLoader;
+			sourceTree = "<group>";
+		};
+		7E31907A2B4337A10043FF90 /* SternX-Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7E31907B2B4337A10043FF90 /* SternX_Loader_Tests.swift */,
+				7E3190912B45FC630043FF90 /* SternX_Processor_Tests.swift */,
+			);
+			path = "SternX-Tests";
+			sourceTree = "<group>";
+		};
+		7E31908F2B45E1790043FF90 /* Data Processing */ = {
+			isa = PBXGroup;
+			children = (
+				7E3190692B4321410043FF90 /* DataProcessor.swift */,
+			);
+			path = "Data Processing";
+			sourceTree = "<group>";
+		};
+		7E3190902B45E1850043FF90 /* Report Data */ = {
+			isa = PBXGroup;
+			children = (
+				7E31906B2B43214E0043FF90 /* ReportGenerator.swift */,
+			);
+			path = "Report Data";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E31905C2B4320A90043FF90 /* SternX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E3190642B4320A90043FF90 /* Build configuration list for PBXNativeTarget "SternX" */;
+			buildPhases = (
+				7E3190592B4320A90043FF90 /* Sources */,
+				7E31905A2B4320A90043FF90 /* Frameworks */,
+				7E31905B2B4320A90043FF90 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SternX;
+			packageProductDependencies = (
+				7E3190A02B46E2950043FF90 /* ArgumentParser */,
+			);
+			productName = SternX;
+			productReference = 7E31905D2B4320A90043FF90 /* SternX */;
+			productType = "com.apple.product-type.tool";
+		};
+		7E3190782B4337A10043FF90 /* SternX-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E31907D2B4337A10043FF90 /* Build configuration list for PBXNativeTarget "SternX-Tests" */;
+			buildPhases = (
+				7E3190752B4337A10043FF90 /* Sources */,
+				7E3190762B4337A10043FF90 /* Frameworks */,
+				7E3190772B4337A10043FF90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SternX-Tests";
+			productName = "SternX-Tests";
+			productReference = 7E3190792B4337A10043FF90 /* SternX-Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E3190552B4320A90043FF90 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					7E31905C2B4320A90043FF90 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					7E3190782B4337A10043FF90 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 7E3190582B4320A90043FF90 /* Build configuration list for PBXProject "SternX" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E3190542B4320A90043FF90;
+			packageReferences = (
+				7E3190942B461CFE0043FF90 /* XCLocalSwiftPackageReference "../../pak/ConcurrencyPlus" */,
+				7E3190992B46DF980043FF90 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
+			productRefGroup = 7E31905E2B4320A90043FF90 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E31905C2B4320A90043FF90 /* SternX */,
+				7E3190782B4337A10043FF90 /* SternX-Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E3190772B4337A10043FF90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E3190592B4320A90043FF90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3190872B4341DC0043FF90 /* PostLoader.swift in Sources */,
+				7E3190612B4320A90043FF90 /* CLI.swift in Sources */,
+				7E31908C2B44B3D40043FF90 /* PostsMapper.swift in Sources */,
+				7E31908A2B44B3B50043FF90 /* HTTPClient.swift in Sources */,
+				7E31906A2B4321410043FF90 /* DataProcessor.swift in Sources */,
+				7E31906C2B43214E0043FF90 /* ReportGenerator.swift in Sources */,
+				7E31906E2B43216F0043FF90 /* Post.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E3190752B4337A10043FF90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3190932B45FC630043FF90 /* SternX_Processor_Tests.swift in Sources */,
+				7E31907C2B4337A10043FF90 /* SternX_Loader_Tests.swift in Sources */,
+				7E3190842B4339C80043FF90 /* CLI.swift in Sources */,
+				7E31908D2B44B4320043FF90 /* PostsMapper.swift in Sources */,
+				7E3190822B4339C80043FF90 /* DataProcessor.swift in Sources */,
+				7E31908E2B44B4320043FF90 /* HTTPClient.swift in Sources */,
+				7E3190832B4339C80043FF90 /* Post.swift in Sources */,
+				7E3190882B4341E10043FF90 /* PostLoader.swift in Sources */,
+				7E3190852B4339C90043FF90 /* ReportGenerator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7E3190622B4320A90043FF90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7E3190632B4320A90043FF90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		7E3190652B4320A90043FF90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YVTC4WR9M8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7E3190662B4320A90043FF90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YVTC4WR9M8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		7E31907E2B4337A10043FF90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YVTC4WR9M8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ahvaraki.SternX-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7E31907F2B4337A10043FF90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YVTC4WR9M8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ahvaraki.SternX-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E3190582B4320A90043FF90 /* Build configuration list for PBXProject "SternX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E3190622B4320A90043FF90 /* Debug */,
+				7E3190632B4320A90043FF90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E3190642B4320A90043FF90 /* Build configuration list for PBXNativeTarget "SternX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E3190652B4320A90043FF90 /* Debug */,
+				7E3190662B4320A90043FF90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E31907D2B4337A10043FF90 /* Build configuration list for PBXNativeTarget "SternX-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E31907E2B4337A10043FF90 /* Debug */,
+				7E31907F2B4337A10043FF90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		7E3190942B461CFE0043FF90 /* XCLocalSwiftPackageReference "../../pak/ConcurrencyPlus" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../pak/ConcurrencyPlus;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7E3190992B46DF980043FF90 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7E3190A02B46E2950043FF90 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E3190992B46DF980043FF90 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7E3190552B4320A90043FF90 /* Project object */;
+}
